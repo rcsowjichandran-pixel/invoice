@@ -37,9 +37,7 @@ function App() {
   const [invoiceDate, setInvoiceDate] = useState(new Date().toISOString().split('T')[0]);
   const [clientName, setClientName] = useState('');
   const [clientAddress, setClientAddress] = useState('');
-  const [invoiceItems, setInvoiceItems] = useState([
-    { id: 1, description: 'Steel beams', quantity: 2, price: 150, category: 'materials' },
-  ]);
+  const [invoiceItems, setInvoiceItems] = useState([]);
   const [subtotal, setSubtotal] = useState(0);
   const [totalGST, setTotalGST] = useState(0);
   const [grandTotal, setGrandTotal] = useState(0);
